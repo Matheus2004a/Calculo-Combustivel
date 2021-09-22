@@ -1,0 +1,8 @@
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\obj\x86\Debug\Calculo Combustivel.csproj.GenerateResource.Cache
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\obj\x86\Debug\Calculo Combustivel.csprojResolveAssemblyReference.cache
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\bin\Debug\Calculo Combustivel.exe
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\bin\Debug\Calculo Combustivel.pdb
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\obj\x86\Debug\Calculo Combustivel.exe
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\obj\x86\Debug\Calculo Combustivel.pdb
+C:\Users\Aurelio\documents\visual studio 2010\Projects\Calculo Combustivel\Calculo Combustivel\obj\x86\Debug\WindowsFormsApplication1.FormCombustível.resources
