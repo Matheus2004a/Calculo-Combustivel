@@ -32,70 +32,68 @@ namespace WindowsFormsApplication1
                 return;
             }
 
-            else {
-                qtdLitrosCombustivel = Convert.ToDouble(qtdLitros.Text);
+            qtdLitrosCombustivel = Convert.ToDouble(qtdLitros.Text);
 
-                if (tipoCombustivel.Text == "Álcool")
+            if (tipoCombustivel.Text == "Álcool")
+            {
+                lbl_Preço_Litro_SemDesc.Text = String.Format("{0:n2}", 5.19);
+                precoLitroSemDesc = Convert.ToDouble(lbl_Preço_Litro_SemDesc.Text);
+
+                if (qtdLitrosCombustivel == 20)
                 {
-                    lbl_Preço_Litro_SemDesc.Text = String.Format("{0:n2}", 5.19);
-                    precoLitroSemDesc = Convert.ToDouble(lbl_Preço_Litro_SemDesc.Text);
-
-                    if (qtdLitrosCombustivel == 20)
-                    {
-                        precoLitroAlcool = 5.19 * qtdLitrosCombustivel;
-                        desconto = (qtdLitrosCombustivel * 3) / 100;
-                        precoLitroDesc = precoLitroAlcool - desconto;
-                        lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroDesc);
-                        lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
-                    }
-                    if (qtdLitrosCombustivel > 20)
-                    {
-                        precoLitroAlcool = 5.19 * qtdLitrosCombustivel;
-                        desconto = (qtdLitrosCombustivel * 5) / 100;
-                        precoLitroDesc = precoLitroAlcool - desconto;
-                        lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroDesc);
-                        lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
-                    }
-                    if (qtdLitrosCombustivel < 20)
-                    {
-                        precoLitroAlcool = 5.19 * qtdLitrosCombustivel;
-                        lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
-                        lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroAlcool);
-                    }
-
+                    precoLitroAlcool = 5.19 * qtdLitrosCombustivel;
+                    desconto = (qtdLitrosCombustivel * 3) / 100;
+                    precoLitroDesc = precoLitroAlcool - desconto;
+                    lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroDesc);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                }
+                if (qtdLitrosCombustivel > 20)
+                {
+                    precoLitroAlcool = 5.19 * qtdLitrosCombustivel;
+                    desconto = (qtdLitrosCombustivel * 5) / 100;
+                    precoLitroDesc = precoLitroAlcool - desconto;
+                    lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroDesc);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                }
+                if (qtdLitrosCombustivel < 20)
+                {
+                    precoLitroAlcool = 5.19 * qtdLitrosCombustivel;
                     lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
+                    lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroAlcool);
                 }
 
-                if (tipoCombustivel.Text == "Gasolina")
-                {  
-                    lbl_Preço_Litro_SemDesc.Text = String.Format("{0:n2}", 6.29);
-                    precoLitroSemDesc = Convert.ToDouble(lbl_Preço_Litro_SemDesc.Text);
+                lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
+            }
 
-                    if (qtdLitrosCombustivel == 20)
-                    {
-                        precoLitroGasolina = 6.29 * qtdLitrosCombustivel;
-                        desconto = (qtdLitrosCombustivel * 4) / 100;
-                        precoLitroDesc = precoLitroGasolina - desconto;
-                        lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
-                        lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroDesc);
-                        lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
-                    }
-                    if (qtdLitrosCombustivel > 20)
-                    {
-                        precoLitroGasolina = 6.29 * qtdLitrosCombustivel;
-                        desconto = (qtdLitrosCombustivel * 6) / 100;
-                        precoLitroDesc = precoLitroGasolina - desconto;
-                        lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
-                        lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroDesc);
-                        lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
-                        
-                    }
-                    if (qtdLitrosCombustivel < 20)
-                    {
-                        precoLitroGasolina = 6.29 * qtdLitrosCombustivel;
-                        lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
-                        lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroGasolina);
-                    }
+            if (tipoCombustivel.Text == "Gasolina")
+            {
+                lbl_Preço_Litro_SemDesc.Text = String.Format("{0:n2}", 6.29);
+                precoLitroSemDesc = Convert.ToDouble(lbl_Preço_Litro_SemDesc.Text);
+
+                if (qtdLitrosCombustivel == 20)
+                {
+                    precoLitroGasolina = 6.29 * qtdLitrosCombustivel;
+                    desconto = (qtdLitrosCombustivel * 4) / 100;
+                    precoLitroDesc = precoLitroGasolina - desconto;
+                    lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
+                    lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroDesc);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                }
+                if (qtdLitrosCombustivel > 20)
+                {
+                    precoLitroGasolina = 6.29 * qtdLitrosCombustivel;
+                    desconto = (qtdLitrosCombustivel * 6) / 100;
+                    precoLitroDesc = precoLitroGasolina - desconto;
+                    lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
+                    lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroDesc);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+
+                }
+                if (qtdLitrosCombustivel < 20)
+                {
+                    precoLitroGasolina = 6.29 * qtdLitrosCombustivel;
+                    lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
+                    lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroGasolina);
                 }
             }
         }
