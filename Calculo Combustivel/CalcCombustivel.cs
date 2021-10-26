@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
                     desconto = (qtdLitrosCombustivel * 3) / 100;
                     precoLitroDesc = precoLitroAlcool - desconto;
                     lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroDesc);
-                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroDesc);
                 }
                 if (qtdLitrosCombustivel > 20)
                 {
@@ -53,7 +53,7 @@ namespace WindowsFormsApplication1
                     desconto = (qtdLitrosCombustivel * 5) / 100;
                     precoLitroDesc = precoLitroAlcool - desconto;
                     lbl_Preco_Total_Comb.Text = String.Format("{0:n2}", precoLitroDesc);
-                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroDesc);
                 }
                 if (qtdLitrosCombustivel < 20)
                 {
@@ -77,7 +77,7 @@ namespace WindowsFormsApplication1
                     precoLitroDesc = precoLitroGasolina - desconto;
                     lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
                     lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroDesc);
-                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroDesc);
                 }
                 if (qtdLitrosCombustivel > 20)
                 {
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1
                     precoLitroDesc = precoLitroGasolina - desconto;
                     lbl_Qtd_Total_Litros.Text = qtdLitros.Text;
                     lbl_Preco_Total_Comb.Text = Convert.ToString(precoLitroDesc);
-                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroSemDesc - desconto);
+                    lbl_Preço_Litro_ComDesc.Text = String.Format("{0:n2}", precoLitroDesc);
 
                 }
                 if (qtdLitrosCombustivel < 20)
