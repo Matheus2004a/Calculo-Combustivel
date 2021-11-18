@@ -77,6 +77,7 @@
             this.tipoCombustivel.Name = "tipoCombustivel";
             this.tipoCombustivel.Size = new System.Drawing.Size(201, 21);
             this.tipoCombustivel.TabIndex = 7;
+            this.tipoCombustivel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tipoCombustivel_KeyDown);
             // 
             // qtdLitros
             // 
@@ -203,7 +204,7 @@
             this.lbl_Preco_Total_Comb.ForeColor = System.Drawing.Color.Red;
             this.lbl_Preco_Total_Comb.Location = new System.Drawing.Point(293, 255);
             this.lbl_Preco_Total_Comb.Name = "lbl_Preco_Total_Comb";
-            this.lbl_Preco_Total_Comb.Size = new System.Drawing.Size(112, 31);
+            this.lbl_Preco_Total_Comb.Size = new System.Drawing.Size(150, 31);
             this.lbl_Preco_Total_Comb.TabIndex = 20;
             this.lbl_Preco_Total_Comb.Text = "0,00";
             this.lbl_Preco_Total_Comb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

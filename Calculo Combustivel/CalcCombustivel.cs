@@ -16,6 +16,13 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        private void tipoCombustivel_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) {
+                qtdLitros.Focus();
+            }
+        }
+
         private void btnCalcular_Click_1(object sender, EventArgs e)
         {
             double qtdLitrosCombustivel, precoLitroGasolina, precoLitroAlcool, precoLitroDesc, precoLitroSemDesc, desconto;
